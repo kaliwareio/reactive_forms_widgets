@@ -30,8 +30,7 @@ typedef ImagePickCallback = void Function(
 ///
 /// A [ReactiveForm] ancestor is required.
 ///
-class ReactiveImagePicker
-    extends ReactiveFormField<List<SelectedFile>, List<SelectedFile>> {
+class ReactiveImagePicker<T> extends ReactiveFormField<T, List<SelectedFile>> {
   /// Creates a [ReactiveImagePicker] that contains a [DropdownSearch].
   ///
   /// Can optionally provide a [formControl] to bind this widget to a control.
